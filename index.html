@@ -120,22 +120,16 @@
 
         if (diff <= 0.05) {
             rank = "SS";
-            comment = "神タイミング。スーパー線路読み。";
         } else if (diff <= 0.10) {
             rank = "S";
-            comment = "かなり正確。実戦でも全然狙えるレベル。";
         } else if (diff <= 0.20) {
             rank = "A";
-            comment = "良い感じ。あとちょっと詰めたらガチで武器になる。";
         } else if (diff <= 0.30) {
             rank = "B";
-            comment = "まあまあ。継続してやれば安定してきそう。";
         } else if (diff <= 0.50) {
             rank = "C";
-            comment = "感覚つかみ中。続けて何回かやってみよう。";
         } else {
             rank = "D";
-            comment = "解除音から目離してない？ 一旦深呼吸してもう一回。";
         }
 
         rankLabel.textContent = `ランク: ${rank}　(${comment})`;
@@ -149,3 +143,4 @@
 
 </body>
 </html>
+
